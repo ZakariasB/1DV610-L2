@@ -36,4 +36,8 @@ export default class BarChart {
             }
     }
   }
+
+  clear () {
+    this.context.clearRect(0, 0, this.width, this.height)
+  }
 }
