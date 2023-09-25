@@ -3,7 +3,7 @@ export default class PieChart {
         this.canvas = document.getElementById(options.canvasId)
         this.context = this.canvas.getContext('2d')
         this.data = options.data || []
-        this.labels = options.labels || [];
+        this.labels = options.labels || []
         this.colors = options.colors || []
         this.centerX = this.canvas.width / 2
         this.centerY = this.canvas.height / 2
@@ -11,6 +11,10 @@ export default class PieChart {
     }
 
     draw () {
+        if (this.data.length === 0) {
+            console.log("Error: Empty data")
+            return
+        }
         let totalValue = 0
         let currentAngle = -0.5 * Math.PI // Start at the top of the canvas.
 
