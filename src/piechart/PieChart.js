@@ -9,4 +9,32 @@ export default class PieChart {
         this.centerY = this.canvas.height / 2
         this.radius = Math.min(this.centerX, this.centerY) - 10
     }
+
+    draw () {
+        let totalValue = 0
+        let currentAngle = -0.5 * Math.PI // Start at the top of the canvas.
+
+        for (let i = 0; i < this.data.length; i++) {
+            totalValue += this.data[i]
+        }
+
+        for (let i = 0; i < this.data.length; i++) {
+            let sliceAngle = 2 * Math.PI * this.data[i] / totalValue
+
+            this.context.beginPath()
+            this.context.moveTo(this.centerX, this.centerY)
+            this.context.arc(this.centerX, this.centerY, this.radius, currentAngle, currentAngle + sliceAngle)
+            this.context.closePath()
+
+            this.context.fillStyle = this.colors[i] || 'gray'
+            this.context.fill()
+
+            currentAngle += sliceAngle;
+
+        }
+    }
+
+    clear () {
+        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height)
+    }
 }
