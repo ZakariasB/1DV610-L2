@@ -21,6 +21,4 @@ After instantiaitng a BarChart object, call the draw method to draw the chart an
 
 ## Known Issues
 
-### Label feature
 
-Currently because of an issue with labels this feature does not work so abstain from setting the label field as this currently does not work.

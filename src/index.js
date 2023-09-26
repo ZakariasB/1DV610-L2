@@ -1,12 +1,12 @@
 
-import LineChart from './linechart/LineChart.js'
+import BarChart from './BarChart/BarChart.js'
 
-let chart = new LineChart({
+let chart = new BarChart({
     canvasId: 'myCanvas',
-    data: [1, 5, 7, 8],
-    colors: '#FF0000'
+    data: [9, 5, 7, 8],
+    labels: ['A', 'B', 'C', 'D'],
+    colors: ['#FF0000', '#00FF00', '#0000FF', '#FFFF00']
 
 })
 
 chart.draw()
-chart.clear()
