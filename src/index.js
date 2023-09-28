@@ -1,9 +1,9 @@
 
-import BarChart from './BarChart/BarChart.js'
+import HorizontalBarChart from './HorizontalBarChart/HorizontalBarChart.js'
 
-let chart = new BarChart({
+let chart = new HorizontalBarChart({
     canvasId: 'myCanvas',
-    data: [9, 5, 7, 8],
+    data: [19, 25, 37, 8],
     labels: ['A', 'B', 'C', 'D'],
     colors: ['#FF0000', '#00FF00', '#0000FF', '#FFFF00']
 

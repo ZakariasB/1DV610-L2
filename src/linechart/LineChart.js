@@ -9,6 +9,7 @@ export default class LineChart {
     }
 
     draw() {
+        try {
         if (this.data.length === 0) {
             console.log("Error: Empty data")
             return
@@ -35,6 +36,10 @@ export default class LineChart {
 
         this.context.strokeStyle = this.color
         this.context.stroke()
+     } catch (error) {
+        console.error(error)
+        this.clear()
+     }
     }
 
     clear () {

@@ -8,7 +8,8 @@ import BarChart from './BarChart.js';
 const chart = new BarChart({
     canvasId: 'myCanvas',
     data: [5, 8, 3, 6, 7],
-    colors: ['#FF0000', '#00FF00', '#0000FF', '#FFFF00', '#FF00FF']
+    colors: ['#FF0000', '#00FF00', '#0000FF', '#FFFF00', '#FF00FF'],
+    labels: ['Label 1', 'Label 2', 'Label 3', 'Label 4', 'Label 5']
 });
 
 chart.draw();

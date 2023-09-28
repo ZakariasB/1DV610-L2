@@ -11,6 +11,7 @@ export default class BarChart {
   }
 
   draw() {
+    try {
     if (this.data.length === 0) {
         console.log("Error: Empty data")
         return
@@ -35,6 +36,10 @@ export default class BarChart {
                 this.context.fillText(this.labels[i], x + barWidth / 2, this.height - this.padding / 2)
             }
     }
+   } catch (error) {
+    console.error(error)
+    this.clear()
+   }
   }
 
   clear () {

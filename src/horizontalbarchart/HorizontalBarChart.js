@@ -11,6 +11,7 @@ export default class HorizontalBarChart {
     }
 
     draw() {
+        try {
         if (this.data.length === 0) {
             console.log("Error: Empty data")
             return
@@ -36,6 +37,10 @@ export default class HorizontalBarChart {
                 this.context.fillText(this.labels[i], x + barWidth + 5, y + barHeight / 2)
             }
         }
+     } catch (error) {
+        console.error(error)
+        this.clear()
+     }
     }
 
     

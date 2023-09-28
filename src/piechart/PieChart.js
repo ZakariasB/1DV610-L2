@@ -11,6 +11,7 @@ export default class PieChart {
     }
 
     draw () {
+        try {
         if (this.data.length === 0) {
             console.log("Error: Empty data")
             return
@@ -36,6 +37,11 @@ export default class PieChart {
             currentAngle += sliceAngle;
 
         }
+
+     } catch (error) {
+        console.error(error)
+        this.clear()
+     }
     }
 
     clear () {
