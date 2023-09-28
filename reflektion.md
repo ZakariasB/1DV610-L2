@@ -40,3 +40,16 @@ Innan tabellen vill jag bara göra det tydligt att jag har flera metoder men bar
 
 
 ### Reflektion
+Efter att jag har läst kapitel 3 har jag hittat många brister i mina funktioner / metoder. Oftast gör jag funktioner som är både för långa samtidigt som de gör flera olika saker samtidigt ofta i olika abstraktions nivåer. 
+
+I denna laboration hade jag stort kunnat förbättra koden genom att bryta ut draw metoderna i flera mindre metoder som sedan kunde ärvas ner från en super class till mina diagram klasser. På så sätt hade jag kunnat ha mindre funktioner som fokuserade på en grej samtidigt som jag lyckas återanvända kod. 
+
+Min inställning till hur man skriver funktioner har helt ändrats då jag tidigare inte la mycket tanke alls till vad som skulle i en funktion men nu ser jag hur mycket mer läsbar samt underhållbar koden blir när man delar upp den mer.
+
+## Reflektion av kodkvalitén i denna laboration.
+
+Min kodkvalitet innan denna laboration samt i denna laboration har varit lite svag. Metoder har haft operationer med olika abstraktionsnivå, de har fokuserat på mer än en uppgift, de har varit allt förutom små och de har ofta haft för många argument. Utöver det som jag har nämnt i tabellerna så har jag också lärt mig att extrahera try catch satser till egna funktioner eftersom ofta gör strukturen av koden mer komplex. 
+
+Jag ser nu hur jag kunnat förbättra denna laboration. Dela upp draw metoderna i en InputHandling metod, en funktion som sätter alla värden och sedan en funktion som faktiskt ritat diagrammen. Då hade jag kunnat använda inheritance för att återanvända kod för de metoder som förekommer i alla de 4 klasserna. På så sätt hade min kod blivit lättare att läsa samt förstå, lättare att underhålla samt mindre kod som hade behövts repeteras.
+
+Jag skulle personligen säga att namngivningen inte hade lika stora brister som funktionerna (förutom x och y variablerna). Men ändå har jag mycket att förbättra. Visa namn på variabler som clear är inte dåliga men de berättar inte hela historien medan andra som x och y kanske förstås av mig men inte någon som läser koden för första gången. Efter denna laboration samt efter att jag läst dessa kapitel har jag nu en större förståelse för hur man skriver kod med hög kodkvalité.
