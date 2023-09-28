@@ -2,6 +2,7 @@
 The LineChart submodule is responsible for drawing a LineChart on a canvas element using the canvas api.
 
 ## Code Example
+```JavaScript
 
 import LineChart from './LineChart.js';
 
@@ -13,6 +14,7 @@ const line = new LineChart({
 
 line.draw();
 line.clear(); // Clears the chart.
+```
 
 ## Usage Information
 

@@ -2,6 +2,7 @@
 The BarChart submodule is responsible for drawing a BarChart on a canvas element using the canvas api. 
 
 ## Code Example
+```JavaScript
 import BarChart from './BarChart.js';
 
 const chart = new BarChart({
@@ -12,6 +13,7 @@ const chart = new BarChart({
 
 chart.draw();
 chart.clear(); // Clears the chart.
+```
 
 ## Usage Information
 

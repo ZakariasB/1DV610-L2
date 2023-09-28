@@ -3,6 +3,7 @@ The PieChart submodule is responsible for drawing a PieChart on a canvas element
 
 ## Code Example
 
+```JavaScript
 import PieChart from './PieChart.js';
 
 const pie = new PieChart({
@@ -13,6 +14,7 @@ const pie = new PieChart({
 
 pie.draw();
 pie.clear() // Clears the chart.
+```
 
 ## Usage Information
 
