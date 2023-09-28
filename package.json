@@ -1,7 +1,7 @@
 {
   "name": "1dv610-l2",
   "version": "1.0.0",
-  "description": "L2",
+  "description": "Chart Module",
   "main": "src/index.js",
   "type": "module",
   "scripts": {
@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/ZakariasB/1DV610-L2/issues"
   },
-  "homepage": "https://github.com/ZakariasB/1DV610-L2#readme"
+  "eslintConfig": {
+    "extends": "@lnu"
+  },
+  "homepage": "https://github.com/ZakariasB/1DV610-L2#readme",
+  "devDependencies": {
+    "@lnu/eslint-config": "^1.1.7"
+  }
 }
