@@ -28,30 +28,11 @@ Innan tabellen vill jag bara göra det tydligt att jag har flera metoder men bar
 
 | Metodnamn                             | Reflektion | antal rader |
 |---------------------------------------|------------|-------------|
-| draw (LineChart klassen)          |  Detta passar in på alla draw metoder så jag nämner det bara här.
-Metoden draw validerar användarens data property, den hittar maximun
-samt minimum värdet i data propertyn , den ritar ut ett diagram m.m.
-Detta hade kunnat delas upp i olika metoder t.ex en för InputHandling en för att hitta max värdet m.m.
-Sedan hade den metoden kunnat ärvts till de andra klasserna för att återanvända koden så att alla klasser inte
-hade behövt en InputHandling metod och en findMaximumNumber metod.          | 32          |
-| draw (HorizontalBarChart klassen) |   Även om det inte är några jätte metoder hade det fortfarande hjälpt läsbarheten samt underhållbarheten att dela
-upp dem i mindre metoder. Use Descriptive Names: Detta kanske går in på samma sak som i kapitel 2 men draw hade
-kunnat heta draw + diagrammet som används för att visa tydligare på vad som händer.         | 31          |
-| draw (Barchart klassen)           |    One Level of Abstraction per Function
-Eftersom simpla operationer som att hitta det största värdet i en array genomförs innan en lite mer komplex
-matematisk operation genomförs för att rida ut en stor nog cirkel så hade det behövts här igen att metoden delades
-upp i flera mindre metoder som har samma abstraktions nivå        | 30          |
-| draw ( PieChart klassen)          |   Function Arguments
-Dem ända metoderna som har argument är mina konstruktörer. Alla andra draw metoder är niladic och därför
-gör det metoderna lättare att förstå då argument kan vara mycket konceptuella speciellt när dem är dåligt namngivna
-Command Query Separation: Trots att mina draw metoder gör för mycket olika saker lyckas dem ändå att ändra på ett objekt
-utan att returnera information.
-         | 30          |
-| clear (alla klasser)              |     Small
-Funktionen är bara någon rad lång.
-Do One thing: Funktionen rensar bara canvaset
-Function Arguments: Funktionen tar inga argument       | 1           |
-
+| draw (LineChart klassen)          | **Do One Thing** Detta passar in på alla draw metoder så jag nämner det bara här. Metoden draw validerar användarens data property, den hittar maxmimum samt minimum värdet i data propertyn, den ritar ut ett diagram m.m. Detta hade kunnat delas upp i olika metoder t.ex en för InputHandling en för att hitta maxvärdet m.m. Sedan hade den metoden kunnat ärvts till de andra klasserna för att återanvända koden så att alla klasser inte hade behövt en InputHandling metod och en findMaxNumber metod.           | 32          |
+| draw (HorizontalBarChart klassen) |            | 31          |
+| draw (Barchart klassen)           |            | 30          |
+| draw ( PieChart klassen)          |            | 30          |
+| clear (alla klasser)              |            | 1           |
 
 
 
