@@ -10,3 +10,5 @@ The PieChart submodule is responsible for drawing a PieChart on a canvas element
 ## LineChart
 The LineChart submodule is responsible for drawing a LineChart on a canvas element using the canvas api.
 
+## Releases
+[V.1](https://github.com/ZakariasB/1DV610-L2/releases/tag/V1)
