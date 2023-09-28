@@ -10,6 +10,9 @@ export default class LineChart {
    * @param {*} options An object containing the configuration of your LineChart.
    */
   constructor (options) {
+    if (typeof options.canvasId !== 'string' || document.getElementById(options.canvasId) === null) {
+      throw new TypeError('Need a valid reference to a canvas element')
+    }
     this.canvas = document.getElementById(options.canvasId)
     this.context = this.canvas.getContext('2d')
     this.data = options.data || []
