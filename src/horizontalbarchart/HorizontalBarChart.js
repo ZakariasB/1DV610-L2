@@ -10,6 +10,34 @@ export default class HorizontalBarChart {
         this.padding = options.padding || 10
     }
 
+    draw() {
+        if (this.data.length === 0) {
+            console.log("Error: Empty data")
+            return
+        }
+
+        let totalBars = this.data.length
+        let maxValue = Math.max(...this.data)
+        let paddingSpace = (totalBars + 1) * this.padding
+        let availableHeight = this.height - paddingSpace
+        let barHeight = availableHeight / totalBars
+
+        for (let i = 0; i < totalBars; i++) {
+            let barWidth = (this.data[i] / maxValue) * (this.width - 2 * this.padding)
+            let y = this.padding + i * (barHeight + this.padding)
+            let x = this.padding
+
+            this.context.fillStyle = this.colors[i] || 'gray'
+            this.context.fillRect(x, y, barWidth, barHeight)
+
+            if (this.labels[i]) {
+                this.context.fillStyle = "#000"
+                this.context.textAlign = "left"
+                this.context.fillText(this.labels[i], x + barWidth + 5, y + barHeight / 2)
+            }
+        }
+    }
+
     
 
     clear() {
