@@ -60,7 +60,7 @@ export default class LineChart {
   }
 
   /**
-   * Clears the HTML canvas element.
+   * Clears the HTML canvas element..
    */
   clear () {
     this.context.clearRect(0, 0, this.canvas.width, this.canvas.height)
