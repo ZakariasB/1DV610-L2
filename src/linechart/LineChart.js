@@ -1,4 +1,4 @@
-import BaseChart from "../basechart/BaseChart"
+import BaseChart from "../basechart/BaseChart.js"
 
 /**
  * The LineChart module for drawing a LineChart on a HTML canvas element.

@@ -1,4 +1,4 @@
-import BaseChart from "../basechart/BaseChart"
+import BaseChart from "../basechart/BaseChart.js"
 
 /**
  * The PieChart module for drawing a PieChart on a HTML canvas element.

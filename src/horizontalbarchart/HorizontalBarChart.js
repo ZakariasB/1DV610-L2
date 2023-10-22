@@ -1,4 +1,4 @@
-import BaseChart from "../basechart/BaseChart"
+import BaseChart from "../basechart/BaseChart.js"
 
 /**
  * The HorizontalBarChart module for drawing a HorizontalBarChart on a HTML canvas element.
