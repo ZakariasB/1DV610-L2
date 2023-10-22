@@ -25,7 +25,7 @@ export default class BaseChart {
     }
 
     isValidData(data) {
-        return typeof data === 'array' && data[0]
+        return typeof data === 'array' && data.length !== 0
     }
 
   /**

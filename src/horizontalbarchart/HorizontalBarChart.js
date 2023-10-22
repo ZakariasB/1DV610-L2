@@ -26,10 +26,6 @@ export default class HorizontalBarChart extends BaseChart {
    */
   draw () {
     try {
-      if (this.data.length === 0) {
-        console.log('Error: Empty data')
-        return
-      }
 
       const totalBars = this.data.length
       const maxValue = Math.max(...this.data)
@@ -39,16 +35,16 @@ export default class HorizontalBarChart extends BaseChart {
 
       for (let i = 0; i < totalBars; i++) {
         const barWidth = (this.data[i] / maxValue) * (this.width - 2 * this.padding)
-        const y = this.padding + i * (barHeight + this.padding)
-        const x = this.padding
+        const yAxis = this.padding + i * (barHeight + this.padding)
+        const xAxis = this.padding
 
         this.context.fillStyle = this.colors[i] || 'gray'
-        this.context.fillRect(x, y, barWidth, barHeight)
+        this.context.fillRect(xAxis, yAxis, barWidth, barHeight)
 
         if (this.labels[i]) {
           this.context.fillStyle = '#000'
           this.context.textAlign = 'left'
-          this.context.fillText(this.labels[i], x + barWidth + 5, y + barHeight / 2)
+          this.context.fillText(this.labels[i], xAxis + barWidth + 5, yAxis + barHeight / 2)
         }
       }
     } catch (error) {

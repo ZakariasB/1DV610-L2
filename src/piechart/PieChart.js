@@ -27,10 +27,6 @@ export default class PieChart extends BaseChart {
    */
   draw () {
     try {
-      if (this.data.length === 0) {
-        console.log('Error: Empty data')
-        return
-      }
       let totalValue = 0
       let currentAngle = -0.5 * Math.PI // Start at the top of the canvas.
 

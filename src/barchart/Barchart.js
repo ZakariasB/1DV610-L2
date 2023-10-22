@@ -27,10 +27,6 @@ export default class BarChart extends BaseChart {
    */
   draw () {
     try {
-      if (this.data.length === 0) {
-        console.log('Error: Empty data')
-        return
-      }
       const totalBars = this.data.length
       const maxValue = Math.max(...this.data)
       const paddingSpace = (totalBars + 1) * this.padding
@@ -39,16 +35,16 @@ export default class BarChart extends BaseChart {
 
       for (let i = 0; i < totalBars; i++) {
         const barHeight = (this.data[i] / maxValue) * (this.height - 2 * this.padding)
-        const x = this.padding + i * (barWidth + this.padding)
-        const y = this.height - barHeight - this.padding
+        const xAxis = this.padding + i * (barWidth + this.padding)
+        const yAxis = this.height - barHeight - this.padding
 
         this.context.fillStyle = this.colors[i] || 'gray'
-        this.context.fillRect(x, y, barWidth, barHeight)
+        this.context.fillRect(xAxis, yAxis, barWidth, barHeight)
 
         if (this.labels[i]) {
           this.context.fillStyle = '#000'
           this.context.textAlign = 'center'
-          this.context.fillText(this.labels[i], x + barWidth / 2, this.height - this.padding / 2)
+          this.context.fillText(this.labels[i], xAxis + barWidth / 2, this.height - this.padding / 2)
         }
       }
     } catch (error) {
@@ -56,6 +52,7 @@ export default class BarChart extends BaseChart {
       this.clear()
     }
   }
+
 
   
 }

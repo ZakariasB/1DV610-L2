@@ -25,10 +25,6 @@ export default class LineChart extends BaseChart {
    */
   draw () {
     try {
-      if (this.data.length === 0) {
-        console.log('Error: Empty data')
-        return
-      }
 
       const maxValue = Math.max(...this.data)
       const minValue = Math.min(...this.data)
@@ -39,13 +35,13 @@ export default class LineChart extends BaseChart {
       this.context.beginPath()
 
       this.data.forEach((value, index) => {
-        const x = this.padding + index * horizontalStep
-        const y = this.canvas.height - this.padding - (value - minValue) * verticalScale
+        const xAxis = this.padding + index * horizontalStep
+        const yAxis = this.canvas.height - this.padding - (value - minValue) * verticalScale
 
         if (index === 0) {
-          this.context.moveTo(x, y)
+          this.context.moveTo(xAxis, yAxis)
         } else {
-          this.context.lineTo(x, y)
+          this.context.lineTo(xAxis, yAxis)
         }
       })
 
