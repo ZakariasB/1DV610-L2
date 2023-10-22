@@ -1,5 +1,5 @@
 import HorizontalBarChart from './HorizontalBarChart/HorizontalBarChart.js'
-import BarChart from './BarChart/BarChart.js'
+import BarChart from './barchart/BarChart.js'
 import LineChart from './LineChart/LineChart.js'
 import PieChart from './PieChart/PieChart.js'
 
