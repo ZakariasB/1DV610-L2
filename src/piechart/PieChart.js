@@ -1,21 +1,19 @@
+import BaseChart from "../basechart/BaseChart"
+
 /**
  * The PieChart module for drawing a PieChart on a HTML canvas element.
  *
  * @author Zakarias Bergcrona
  */
-export default class PieChart {
+export default class PieChart extends BaseChart {
   /**
    * Initializes the PieChart object with necessary options such as data, color, labels.
    *
    * @param {*} options An object containing the configuration of your PieChart.
    */
   constructor (options) {
-    if (typeof options.canvasId !== 'string' || document.getElementById(options.canvasId) === null) {
-      throw new TypeError('Need a valid reference to a canvas element')
-    }
-    this.canvas = document.getElementById(options.canvasId)
-    this.context = this.canvas.getContext('2d')
-    this.data = options.data || []
+    super(options)
+
     this.labels = options.labels || []
     this.colors = options.colors || []
     this.centerX = this.canvas.width / 2
@@ -59,10 +57,5 @@ export default class PieChart {
     }
   }
 
-  /**
-   * Clears the HTML canvas element.
-   */
-  clear () {
-    this.context.clearRect(0, 0, this.canvas.width, this.canvas.height)
-  }
+  
 }

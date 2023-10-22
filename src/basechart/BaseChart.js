@@ -1,4 +1,6 @@
-
+/**
+ * The BaseChart super class that contain common functionalities for the chart module classes.
+ */
 export default class BaseChart {
     constructor(options) {
         if (!this.isValidCanvasId(options.canvasId)) {
