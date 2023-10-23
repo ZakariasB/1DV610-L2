@@ -10,19 +10,19 @@ help visualize data quick and easy.
 [BarChart](./src/barchart/README.md)
 The BarChart submodule is responsible for drawing a BarChart on a canvas element using the canvas api. 
 
-![BarChart](../../img/barChart.png)
+![BarChart](./img/barChart.png)
 
 ## PieChart
 [PieChart](./src/piechart/README.md)
 The PieChart submodule is responsible for drawing a PieChart on a canvas element using the canvas api.
 
-[PieChart](../../img/pieChart.png)
+![PieChart](./img/pieChart.png)
 
 ## LineChart
 [LineChart](./src/linechart/README.md)
 The LineChart submodule is responsible for drawing a LineChart on a canvas element using the canvas api.
 
-[LineChart](../../img/lineChart.png)
+![LineChart](./img/lineChart.png)
 
 ## Releases
 [V.1](https://github.com/ZakariasB/1DV610-L2/releases/tag/V1)

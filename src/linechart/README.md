@@ -3,7 +3,7 @@ The LineChart submodule is responsible for drawing a LineChart on a canvas eleme
 
 ## Example
 
-[LineChart](../../img/lineChart.png)
+![LineChart](../../img/lineChart.png)
 
 ## Code Example
 ```JavaScript

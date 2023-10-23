@@ -5,7 +5,7 @@ The PieChart submodule is responsible for drawing a PieChart on a canvas element
 
 ## Example
 
-[PieChart](../../img/pieChart.png)
+![PieChart](../../img/pieChart.png)
 
 ```JavaScript
 import PieChart from './PieChart.js';
