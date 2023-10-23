@@ -1,6 +1,10 @@
 # HorizontalBarChart
 The BarChart submodule is responsible for drawing a BarChart on a canvas element using the canvas api. 
 
+## Example
+
+[HorizontalBarChart](../../img/horizontalBarChart.png)
+
 ## Code Example
 ```JavaScript
 import HorizontalBarChart from './BarChart.js';

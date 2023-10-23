@@ -1,6 +1,10 @@
 # BarChart
 The BarChart submodule is responsible for drawing a BarChart on a canvas element using the canvas api. 
 
+## Example
+
+![BarChart](../../img/barChart.png)
+
 ## Code Example
 ```JavaScript
 import BarChart from './BarChart.js';

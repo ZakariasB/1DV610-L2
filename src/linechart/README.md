@@ -1,6 +1,10 @@
 # LineChart
 The LineChart submodule is responsible for drawing a LineChart on a canvas element using the canvas api.
 
+## Example
+
+[LineChart](../../img/lineChart.png)
+
 ## Code Example
 ```JavaScript
 
