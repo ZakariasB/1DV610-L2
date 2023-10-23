@@ -29,7 +29,7 @@ chart.draw();
 ```
 * Anropa draw metoden på det instansierade objektet samt observera om ett diagram ritas ut på canvas elementet. Diagrammet ska se ut som nedan
 
-[Stapeldiagram](./img/barChart.png)
+![Stapeldiagram](./img/barChart.png)
 
 #### TC 1.2 Felaktig indata
 
@@ -69,7 +69,7 @@ chart.draw();
 ```
 * Anropa draw metoden på det instansierade objektet samt observera om ett diagram ritas ut på canvas elementet. Diagrammet ska se ut som nedan
 
-[Horisontellt Stapeldiagram](./img/horizontalBarChart.png)
+![Horisontellt Stapeldiagram](./img/horizontalBarChart.png)
 
 #### TC 2.2 Felaktig Indata
 
@@ -99,7 +99,7 @@ chart.draw();
 ```
 * Anropa draw metoden på det instansierade objektet samt observera om ett diagram ritas ut på canvas elementet. Diagrammet ska se ut som nedan
 
-[Linjediagram](./img/lineChart.png)
+![Linjediagram](./img/lineChart.png)
 
 #### TC 3.2 Felaktig Indata
 
@@ -130,7 +130,7 @@ chart.draw();
 ```
 * Anropa draw metoden på det instansierade objektet samt observera om ett diagram ritas ut på canvas elementet. Diagrammet ska se ut som nedan
 
-[Pajdiagram](./img/pieChart.png)
+![Pajdiagram](./img/pieChart.png)
 #### TC 4.2 Felaktig Indata
 
 ##### Test genomgång
