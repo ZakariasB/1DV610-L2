@@ -15,14 +15,36 @@ Utöver att testa de 4 olika typer av diagram genom att mata in rätt indata tes
 ##### Test genomgång
 
 * Se till att ett HTML element med id:et myCanvas finns i filen index.html
-* Instansiera ett nytt BarChart objekt genom att anropa konstruktorn med ett objekt som  argument. Objektet ska ha fyra properties: canvasId: myCanvas, data: [1, 4, 5, 6], labels: ['Label 1', 'Label 2', 'Label 3', 'Label 4', 'Label 5'] samt colors: ['#FF0000', '#00FF00', '#0000FF', '#FFFF00', '#FF00FF'].
-* Anropa draw metoden på det instansierade objektet samt observera om ett diagram ritas ut på canvas elementet.
+* Skriv in följande kod:
+```JavaScript
+const chart = new BarChart({
+    canvasId: 'myCanvas',
+    data: [1, 4, 5, 6],
+    colors: ['#FF0000', '#00FF00', '#0000FF', '#FFFF00', '#FF00FF'],
+    labels: ['Label 1', 'Label 2', 'Label 3', 'Label 4', 'Label 5']
+});
+
+chart.draw();
+
+```
+* Anropa draw metoden på det instansierade objektet samt observera om ett diagram ritas ut på canvas elementet. Diagrammet ska se ut som nedan
+
+[Stapeldiagram](./img/barChart.png)
 
 #### TC 1.2 Felaktig indata
 
 ##### Test genomgång
 
-* Instansiera ett nytt BarChart objekt genom att anropa konstruktorn med ett objekt som argument. Objektet ska ha fyra properties: canvasId: (empty), data: [1, 4, 5, 6], labels: ['Label 1', 'Label 2', 'Label 3', 'Label 4', 'Label 5'] samt colors: ['#FF0000', '#00FF00', '#0000FF', '#FFFF00', '#FF00FF'].
+* Instansiera ett nytt BarChart objekt genom att anropa konstruktorn med ett objekt som argument. Det ska se ut så här:
+```JavaScript
+const chart = new BarChart({
+    canvasId: '',
+    data: [1, 4, 5, 6],
+    colors: ['#FF0000', '#00FF00', '#0000FF', '#FFFF00'],
+    labels: ['Label 1', 'Label 2', 'Label 3', 'Label 4']
+});
+
+```
 * Ta upp web konsolen i din webläsare sedan anropa draw metoden på det instansierade objektet.
 * Ett felmeddelande borde komma upp som säger: Need a valid reference to a canvas element.
 
@@ -33,8 +55,21 @@ Utöver att testa de 4 olika typer av diagram genom att mata in rätt indata tes
 ##### Test genomgång
 
 * Se till att ett HTML element med id:et myCanvas finns i filen index.html
-* Instansiera ett nytt HorizontalBarChart objekt genom att anropa konstruktorn med ett objekt som  argument. Objektet ska ha fyra properties: canvasId: myCanvas, data: [1, 4, 5, 6], labels: ['Label 1', 'Label 2', 'Label 3', 'Label 4', 'Label 5'] samt colors: ['#FF0000', '#00FF00', '#0000FF', '#FFFF00', '#FF00FF'].
-* Anropa draw metoden på det instansierade objektet samt observera om ett diagram ritas ut på canvas elementet.
+* Skriv in följande kod:
+```JavaScript
+const chart = new HorizontalBarChart({
+    canvasId: 'myCanvas',
+    data: [1, 4, 5, 6],
+    colors: ['#FF0000', '#00FF00', '#0000FF', '#FFFF00'],
+    labels: ['Label 1', 'Label 2', 'Label 3', 'Label 4']
+});
+
+chart.draw();
+
+```
+* Anropa draw metoden på det instansierade objektet samt observera om ett diagram ritas ut på canvas elementet. Diagrammet ska se ut som nedan
+
+[Horisontellt Stapeldiagram](./img/horizontalBarChart.png)
 
 #### TC 2.2 Felaktig Indata
 
@@ -51,8 +86,20 @@ Utöver att testa de 4 olika typer av diagram genom att mata in rätt indata tes
 ##### Test genomgång
 
 * Se till att ett HTML element med id:et myCanvas finns i filen index.html
-* Instansiera ett nytt LineChart objekt genom att anropa konstruktorn med ett objekt som  argument. Objektet ska ha tre properties: canvasId: myCanvas, data: [1, 4, 5, 6],  samt color: '#FF0000'.
-* Anropa draw metoden på det instansierade objektet samt observera om ett diagram ritas ut på canvas elementet.
+* Skriv in följande kod:
+```JavaScript
+const chart = new LineChart({
+    canvasId: 'myCanvas',
+    data: [1, 4, 5, 6],
+    colors: '#FF0000'
+});
+
+chart.draw();
+
+```
+* Anropa draw metoden på det instansierade objektet samt observera om ett diagram ritas ut på canvas elementet. Diagrammet ska se ut som nedan
+
+[Linjediagram](./img/lineChart.png)
 
 #### TC 3.2 Felaktig Indata
 
@@ -69,9 +116,21 @@ Utöver att testa de 4 olika typer av diagram genom att mata in rätt indata tes
 ##### Test genomgång
 
 * Se till att ett HTML element med id:et myCanvas finns i filen index.html
-* Instansiera ett nytt PieChart objekt genom att anropa konstruktorn med ett objekt som  argument. Objektet ska ha tre properties: canvasId: myCanvas, data: [1, 4, 5, 6],  samt colors: ['#FF0000', '#00FF00', '#0000FF', '#FFFF00', '#FF00FF'].
-* Anropa draw metoden på det instansierade objektet samt observera om ett diagram ritas ut på canvas elementet.
+* Skriv in följande kod:
+```JavaScript
+const chart = new PieChart({
+    canvasId: 'myCanvas',
+    data: [1, 4, 5, 6],
+    colors: ['#FF0000', '#00FF00', '#0000FF', '#FFFF00'],
+    labels: ['Label 1', 'Label 2', 'Label 3', 'Label 4']
+});
 
+chart.draw();
+
+```
+* Anropa draw metoden på det instansierade objektet samt observera om ett diagram ritas ut på canvas elementet. Diagrammet ska se ut som nedan
+
+[Pajdiagram](./img/pieChart.png)
 #### TC 4.2 Felaktig Indata
 
 ##### Test genomgång
